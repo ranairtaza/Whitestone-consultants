@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://whitestoneconsultants.online/sitemap.xml
+Host: https://whitestoneconsultants.online
