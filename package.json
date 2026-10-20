@@ -1,0 +1,20 @@
+{
+  "name": "whitestone-consultant",
+  "version": "1.0.0",
+  "description": "White Stone PTE & Overseas Consultants Hafizabad official website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "whitestone",
+    "pte",
+    "ielts",
+    "study-abroad",
+    "overseas-consultants",
+    "hafizabad"
+  ],
+  "author": "White Stone Consultants",
+  "license": "ISC"
+}
