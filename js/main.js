@@ -21,6 +21,7 @@ const countriesData = {
     id: "uk",
     name: "United Kingdom",
     flag: "🇬🇧",
+    flagImg: "/assets/flags/gb.svg",
     badge: "Top Global Destination",
     title: "Study in the UK - 1 Year Masters & 2 Year Graduate Route PSW",
     description: "The UK is one of the world's premier higher education destinations. With 1-year master's degrees, world-renowned Russell Group universities, and the 2-Year Graduate Route Post-Study Work (PSW) visa, it provides unmatched career progression for Pakistani students.",
@@ -41,6 +42,7 @@ const countriesData = {
     id: "australia",
     name: "Australia",
     flag: "🇦🇺",
+    flagImg: "/assets/flags/au.svg",
     badge: "PR & Career Pathway",
     title: "Study in Australia - Subclass 500 Visa & High Earning Potential",
     description: "Australia is the #1 choice for students targeting career growth and long-term settlement. With world-class Group of Eight and progressive regional universities, Australia accepts PTE Academic wholeheartedly — which you can ace at White Stone's dedicated computer lab in Hafizabad.",
@@ -61,6 +63,7 @@ const countriesData = {
     id: "cyprus",
     name: "Cyprus",
     flag: "🇨🇾",
+    flagImg: "/assets/flags/cy.svg",
     badge: "Budget Friendly Europe",
     title: "Study in Cyprus - Low Cost, High Visa Ratio & European Standards",
     description: "Cyprus provides an affordable gateway to European higher education with very high visa issuance rates and low financial requirements. Programs are taught in English, and admission is smooth with immediate offer letters.",
@@ -81,6 +84,7 @@ const countriesData = {
     id: "turkey",
     name: "Turkey",
     flag: "🇹🇷",
+    flagImg: "/assets/flags/tr.svg",
     badge: "Gateway of East & West",
     title: "Study in Turkey - Top Ranked Universities & Government Scholarships",
     description: "Turkey bridges Europe and Asia, offering top-tier accredited degrees in Medicine, Engineering, IT, and Business. With the prestigious Türkiye Bursları full scholarships and low tuition fees at foundation universities, it is a favorite for Pakistani students.",
@@ -101,6 +105,7 @@ const countriesData = {
     id: "sweden",
     name: "Sweden",
     flag: "🇸🇪",
+    flagImg: "/assets/flags/se.svg",
     badge: "Nordic Innovation Hub",
     title: "Study in Sweden - World Class Research, Innovation & Spouse Work Rights",
     description: "Home of the Nobel Prize, IKEA, Spotify, and Volvo, Sweden is Europe's tech innovation powerhouse. Sweden offers 100% English-taught master's degrees, full-time work rights for accompanying spouses, and 1 year job-seeker residence permit upon graduation.",
@@ -121,6 +126,7 @@ const countriesData = {
     id: "finland",
     name: "Finland",
     flag: "🇫🇮",
+    flagImg: "/assets/flags/fi.svg",
     badge: "#1 Happiest Country",
     title: "Study in Finland - 4-Year Fast Track to PR & Up to 100% Scholarships",
     description: "Ranked the happiest country in the world for 7 consecutive years, Finland offers the world's most progressive education system. Finnish immigration grants Type A continuous residence permits to students, making you eligible for Permanent Residency (PR) in just 4 years!",
@@ -141,6 +147,7 @@ const countriesData = {
     id: "china",
     name: "China",
     flag: "🇨🇳",
+    flagImg: "/assets/flags/cn.svg",
     badge: "CSC Full Scholarships",
     title: "Study in China - Fully Funded Government Scholarships & MBBS / Tech",
     description: "China is Pakistan's iron brother and the world's 2nd largest economy. With the Chinese Government Scholarship (CSC), Silk Road Scholarships, and Provincial Awards, students can study Bachelors, Masters, or PhD with 100% Free Tuition, Free Hostel, and monthly cash stipends up to 3500 RMB.",
@@ -161,6 +168,7 @@ const countriesData = {
     id: "korea",
     name: "South Korea",
     flag: "🇰🇷",
+    flagImg: "/assets/flags/kr.svg",
     badge: "Tech & GKS Scholarship Hub",
     title: "Study in South Korea - GKS Full-Ride Scholarships & High Tech Giants",
     description: "South Korea is an Asian technological superpower (Samsung, Hyundai, LG). The Korean government provides the prestigious Global Korea Scholarship (GKS), and Korean universities offer 30% to 100% tuition scholarships for international applicants with pathways to the D-10 and E-7 work visas.",
@@ -208,7 +216,7 @@ function initCountriesEngine() {
       panel.innerHTML = `
         <div class="country-panel-header">
           <div class="country-header-left">
-            <span class="country-flag-icon">${data.flag}</span>
+            <img src="${data.flagImg}" alt="${data.name} Flag" class="country-flag-img">
             <div>
               <span class="badge-pill badge-red" style="margin-bottom: 6px;">${data.badge}</span>
               <h3>${data.name}</h3>
