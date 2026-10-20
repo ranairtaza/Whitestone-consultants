@@ -2,10 +2,9 @@
   "name": "whitestone-consultant",
   "version": "1.0.0",
   "description": "White Stone PTE & Overseas Consultants Hafizabad official website",
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "start": "node dev-server.js",
+    "dev": "node dev-server.js"
   },
   "keywords": [
     "whitestone",
