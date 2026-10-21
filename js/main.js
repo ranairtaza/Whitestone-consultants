@@ -288,6 +288,12 @@ function initCountriesEngine() {
     btn.addEventListener('click', () => {
       renderCountry(btn.dataset.country);
     });
+    btn.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        renderCountry(btn.dataset.country);
+      }
+    });
   });
 
   // Bind Tab Buttons

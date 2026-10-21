@@ -4,7 +4,29 @@
    Brand Colors: Deep Navy Blue (#172052) & Vibrant Crimson Red (#D8232A)
 =================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+/* Google Fonts preconnected in HTML head for non-blocking rendering */
+
+/* Skip link for screen reader and keyboard accessibility */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 20px;
+  background: #D8232A;
+  color: #ffffff;
+  padding: 12px 20px;
+  font-weight: 700;
+  border-radius: 8px;
+  z-index: 99999;
+  text-decoration: none;
+  transition: top 0.2s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skip-link:focus {
+  top: 15px;
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
+}
 
 :root {
   --primary-navy: #172052;
