@@ -13,9 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initStickyHeader();
 });
 
-/* ===================================================================
-   1. 8 COUNTRIES DATABASE & INTERACTIVE WHEEL ENGINE
-=================================================================== */
+/* 1. 8 COUNTRIES DATABASE & INTERACTIVE WHEEL ENGINE*/
 const countriesData = {
   uk: {
     id: "uk",
@@ -534,7 +532,7 @@ function initModals() {
   }
 }
 
-window.openBookingModal = function(serviceOrCountry = '') {
+window.openBookingModal = function (serviceOrCountry = '') {
   const modalOverlay = document.getElementById('consultationModal');
   const serviceInput = document.getElementById('modalServiceInput');
 
@@ -548,7 +546,7 @@ window.openBookingModal = function(serviceOrCountry = '') {
   }
 };
 
-window.closeModal = function() {
+window.closeModal = function () {
   const modalOverlay = document.getElementById('consultationModal');
   if (modalOverlay) {
     modalOverlay.classList.remove('active');
@@ -600,7 +598,7 @@ function initForms() {
       showToast("Connecting you directly to White Stone on WhatsApp...");
 
       // Immediate WhatsApp dispatch
-      const waText = 
+      const waText =
         `🎓 *New Consultation Request (White Stone Hafizabad)*\n\n` +
         `👤 *Name:* ${name}\n` +
         `📞 *Phone / WhatsApp:* ${phone}\n` +
@@ -637,7 +635,7 @@ function initForms() {
       showToast("Connecting you directly to White Stone on WhatsApp...");
 
       // Immediate WhatsApp dispatch
-      const waText = 
+      const waText =
         `🎓 *New Website Inquiry (White Stone Hafizabad)*\n\n` +
         `👤 *Student Name:* ${name}\n` +
         `📞 *Phone / WhatsApp:* ${phone}\n` +
