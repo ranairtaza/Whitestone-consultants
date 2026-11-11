@@ -44,6 +44,14 @@ const server = http.createServer((req, res) => {
     safePath = `${safePath}.html`;
   }
 
+  // Fallback for favicon.ico
+  if (pathname === '/favicon.ico' && !fs.existsSync(safePath)) {
+    const fallbackFavicon = path.join(ROOT_DIR, 'assets', 'logo.png');
+    if (fs.existsSync(fallbackFavicon)) {
+      safePath = fallbackFavicon;
+    }
+  }
+
   if (fs.existsSync(safePath) && fs.statSync(safePath).isFile()) {
     const ext = path.extname(safePath).toLowerCase();
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';

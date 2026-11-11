@@ -594,10 +594,15 @@ function initForms() {
   if (modalForm) {
     modalForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const name = document.getElementById('modalName').value.trim();
-      const phone = document.getElementById('modalPhone').value.trim();
-      const service = document.getElementById('modalServiceInput').value;
-      const message = document.getElementById('modalNotes').value.trim();
+      const nameEl = document.getElementById('modalName');
+      const phoneEl = document.getElementById('modalPhone');
+      const serviceEl = document.getElementById('modalServiceInput');
+      const notesEl = document.getElementById('modalNotes');
+
+      const name = nameEl ? nameEl.value.trim() : '';
+      const phone = phoneEl ? phoneEl.value.trim() : '';
+      const service = serviceEl ? serviceEl.value : '';
+      const message = notesEl ? notesEl.value.trim() : '';
 
       if (!name || !phone) {
         alert("Please fill your full name and contact number.");
@@ -628,13 +633,16 @@ function initForms() {
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const name = document.getElementById('contactName').value.trim();
-      const phone = document.getElementById('contactPhone').value.trim();
+      const nameEl = document.getElementById('contactName');
+      const phoneEl = document.getElementById('contactPhone');
       const serviceEl = document.getElementById('contactService');
-      const service = serviceEl ? serviceEl.value : '';
       const countryEl = document.getElementById('contactCountry');
-      const country = countryEl ? countryEl.value : '';
       const notesEl = document.getElementById('contactMessage');
+
+      const name = nameEl ? nameEl.value.trim() : '';
+      const phone = phoneEl ? phoneEl.value.trim() : '';
+      const service = serviceEl ? serviceEl.value : '';
+      const country = countryEl ? countryEl.value : '';
       const notes = notesEl ? notesEl.value.trim() : '';
 
       if (!name || !phone) {
