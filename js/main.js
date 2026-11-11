@@ -270,7 +270,7 @@ function initCountriesEngine() {
             Apply for ${data.name} Visa
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </button>
-          <a href="https://wa.me/923017868078?text=Hello%20White%20Stone%20Consultant,%20I%20want%20complete%20details%20for%20study%20visa%20in%20${encodeURIComponent(data.name)}" target="_blank" class="btn btn-outline">
+          <a href="https://wa.me/923117868078?text=Hello%20White%20Stone%20Consultant,%20I%20want%20complete%20details%20for%20study%20visa%20in%20${encodeURIComponent(data.name)}" target="_blank" class="btn btn-outline">
             WhatsApp Inquiry
           </a>
         </div>
@@ -310,42 +310,50 @@ function initCountriesEngine() {
 =================================================================== */
 const coachingData = {
   pte: {
-    title: "PTE Academic - Hafizabad's Premier Computer Testing Lab",
-    desc: "Pearson Test of English (PTE) is widely accepted for study visas and immigration in Australia, UK, New Zealand, and Canada. At White Stone PTE Hafizabad, we provide real software simulated computer lab practice, AI score breakdown, and templates for 79+ guaranteed results.",
-    badge: "Official Computer Practice Lab in Hafizabad",
+    title: "PTE Academic - Premier Computer Testing Lab & Live Online Classes",
+    desc: "Pearson Test of English (PTE) is widely accepted for study visas and immigration in Australia, UK, New Zealand, and Canada. At White Stone, we conduct specialized classes for both First-Time test takers and Second-Time score improvers — available in our Hafizabad Computer Lab and via Live Interactive Online Classes for students who cannot attend physical classes.",
+    badge: "In-Person Lab & Live Online Classes",
     specs: [
       { label: "🕒 Duration", value: "3 to 5 Weeks (Fast-Track)" },
-      { label: "💻 Lab Practice", value: "Daily 2-Hour Monitored Lab" },
+      { label: "🌐 Class Mode", value: "Physical Lab & Live Online Classes" },
+      { label: "🎯 Batches", value: "First Time & Second Time (Repeaters)" },
+      { label: "💻 Lab Practice", value: "Daily 2-Hour Monitored Lab / Online Portal" },
       { label: "🎧 Headsets", value: "Pearson Standard Noise-Canceling" },
       { label: "🤖 AI Mock Tests", value: "10 Full Scored AI Practice Tests" },
-      { label: "📅 Batch Times", value: "Morning (10 AM), Evening (4 PM, 6 PM)" },
+      { label: "📅 Batch Times", value: "Morning (10 AM), Evening (4 PM, 6 PM) & Online" },
       { label: "🎯 Target Score", value: "58, 65, 79+ Guaranteed Framework" }
     ],
     items: [
+      "Live Interactive Online Classes for students unable to attend physically",
+      "Both First-Time Foundation & Second-Time Score Booster Batches",
       "Dedicated Computer Lab with High-Quality Headsets",
       "Real Pearson Exam Software Interface & Mock Tests",
       "AI Scoring Algorithm Analysis & Immediate Result",
       "Special Speaking & Fluency Pronunciation Tricks",
-      "Flexible Batches: Morning, Evening & Weekend",
+      "Flexible Batches: Morning, Evening & Live Online Shifts",
       "Target Score 58, 65, and 79+ Guarantee Strategies"
     ],
     serviceName: "PTE Academic Coaching"
   },
   ielts: {
-    title: "IELTS Masterclass (Academic & General Training)",
-    desc: "Comprehensive preparation covering all four testing modules: Listening, Reading, Writing, and Speaking. Led by certified instructors with Cambridge practice exams, personalized essay assessments, and 1-on-1 speaking interview simulations.",
-    badge: "Cambridge Certified Curriculum",
+    title: "IELTS Masterclass (In-Person & Live Online Training)",
+    desc: "Comprehensive preparation covering all four testing modules: Listening, Reading, Writing, and Speaking. Whether attending physically at our Hafizabad academy or joining our Live Interactive Online Sessions from any city or abroad, get personalized guidance for both First-Time candidates and Second-Time test takers aiming to improve their band score.",
+    badge: "Physical Classes & Live Online Batches",
     specs: [
       { label: "🕒 Duration", value: "4 to 8 Weeks Complete" },
+      { label: "🌐 Class Mode", value: "Physical Classes & Live Online Sessions" },
+      { label: "🎯 Batches", value: "First Time & Second Time (Repeaters)" },
       { label: "🗣️ Speaking Practice", value: "Daily 1-on-1 Certified Teacher Interview" },
       { label: "📝 Essay Checking", value: "Daily Task 1 & 2 Band Feedback" },
       { label: "📊 Mock Exams", value: "Weekly Full-Length Cambridge Mocks" },
-      { label: "📅 Batch Times", value: "Morning (11 AM), Evening (5 PM)" },
+      { label: "📅 Batch Times", value: "Morning (11 AM), Evening (5 PM) & Online" },
       { label: "🎯 Target Band", value: "Band 6.5, 7.0 & 7.5+ Strategies" }
     ],
     items: [
+      "Live Online Classes via Zoom/Google Meet for Remote Students",
+      "Specialized Batches for Both First-Time & Second-Time Test Takers",
       "4-Module In-Depth Training (L, R, W, S)",
-      "Daily 1-on-1 Speaking Mock Interviews",
+      "Daily 1-on-1 Speaking Mock Interviews (In-Person & Online)",
       "Writing Task 1 & Task 2 Band 7+ Frameworks",
       "Weekly Full-Length Mock Exams with Band Scoring",
       "Free Diagnostic Assessment & Placement Test",
@@ -354,18 +362,20 @@ const coachingData = {
     serviceName: "IELTS Masterclass"
   },
   spoken: {
-    title: "Spoken English & Professional Fluency Course",
-    desc: "Overcome the fear and hesitation of speaking English. Our communicative methodology builds spoken confidence through real conversational drills, public speaking, group discussions, accent training, and embassy interview role-playing.",
+    title: "Spoken English & Professional Fluency (Campus & Online)",
+    desc: "Overcome the fear and hesitation of speaking English. Our communicative methodology builds spoken confidence through real conversational drills, public speaking, group discussions, accent training, and embassy interview role-playing. Available both on-campus in Hafizabad and through live interactive online classes for remote learners.",
     badge: "Confidence & Fluency Guaranteed",
     specs: [
       { label: "🕒 Duration", value: "4 Weeks Intensive Fluency" },
+      { label: "🌐 Class Mode", value: "In-Person & Live Online Batches" },
       { label: "🎙️ Practical Speaking", value: "Daily Discussions & Debates" },
       { label: "🌐 Accent Training", value: "Pronunciation & Rhythm Drills" },
       { label: "🛂 Visa Prep", value: "UK / Europe Embassy Interview Mocks" },
-      { label: "📅 Batch Times", value: "Evening 5:00 PM - 6:30 PM" },
+      { label: "📅 Batch Times", value: "Evening 5:00 PM - 6:30 PM & Online Shifts" },
       { label: "📜 Certification", value: "Course Completion Certificate" }
     ],
     items: [
+      "Live Interactive Online Sessions for Working & Out-of-City Students",
       "Hesitation Elimination & Stage Fear Removal",
       "Practical Daily Life Dialogue & Social Speaking",
       "Embassy Visa Interview Preparation Sessions",
@@ -434,7 +444,7 @@ function initCoachingTabs() {
               Book Free Trial Class
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </button>
-            <a href="https://wa.me/923017868078?text=Hello%20White%20Stone%20Consultants,%20I%20want%20to%20inquire%20about%20${encodeURIComponent(data.serviceName)}" target="_blank" class="btn btn-outline-white">
+            <a href="https://wa.me/923117868078?text=Hello%20White%20Stone%20Consultants,%20I%20want%20to%20inquire%20about%20${encodeURIComponent(data.serviceName)}" target="_blank" class="btn btn-outline-white">
               Fee & Timing Inquiry
             </a>
           </div>
@@ -606,7 +616,7 @@ function initForms() {
         (message ? `📝 *Notes/Date:* ${message}\n` : '') +
         `\n_Sent from White Stone Consultants Website_`;
 
-      const waUrl = `https://wa.me/923017868078?text=${encodeURIComponent(waText)}`;
+      const waUrl = `https://wa.me/923117868078?text=${encodeURIComponent(waText)}`;
       window.open(waUrl, '_blank');
 
       modalForm.reset();
@@ -644,7 +654,7 @@ function initForms() {
         (notes ? `💬 *Message/Questions:* ${notes}\n` : '') +
         `\n_Sent from White Stone Consultants Website_`;
 
-      const waUrl = `https://wa.me/923017868078?text=${encodeURIComponent(waText)}`;
+      const waUrl = `https://wa.me/923117868078?text=${encodeURIComponent(waText)}`;
       window.open(waUrl, '_blank');
 
       contactForm.reset();

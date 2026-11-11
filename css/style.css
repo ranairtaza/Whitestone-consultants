@@ -732,6 +732,19 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
+}
+
+.pill-card-1 img {
+  object-position: center top;
+}
+
+.pill-card-2 img {
+  object-position: center;
+}
+
+.pill-card-3 img {
+  object-position: center top;
 }
 
 .about-features-grid {
@@ -1295,6 +1308,130 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--primary-navy-dark);
   color: #FFFFFF;
   position: relative;
+}
+
+/* Online Classes Highlight Banner */
+.online-classes-banner {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.2) 0%, rgba(15, 23, 42, 0.8) 50%, rgba(30, 58, 138, 0.35) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-left: 5px solid var(--primary-red);
+  border-radius: var(--radius-lg);
+  padding: 30px 34px;
+  margin-bottom: 38px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+}
+
+.online-banner-icon {
+  font-size: 3rem;
+  line-height: 1;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+.online-banner-flyer {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.online-banner-flyer img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease;
+}
+
+.online-banner-flyer img:hover {
+  transform: scale(1.04);
+}
+
+.online-banner-content {
+  flex: 1;
+}
+
+.online-banner-badge {
+  display: inline-block;
+  background: var(--primary-red);
+  color: #FFFFFF;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 10px;
+}
+
+.online-banner-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.online-banner-desc {
+  color: #E2E8F0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.online-banner-desc strong {
+  color: #FFFFFF;
+}
+
+.online-banner-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.online-tag {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #F8FAFC;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+}
+
+.online-banner-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+  min-width: 220px;
+}
+
+@media (max-width: 991px) {
+  .online-classes-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 20px;
+    gap: 20px;
+  }
+  .online-banner-actions {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .online-banner-actions .btn {
+    flex: 1;
+    min-width: 160px;
+  }
 }
 
 .coaching-section .section-header .section-title {
